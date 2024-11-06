@@ -1,6 +1,8 @@
 .info-img {
     border-radius: 50%;
     margin-top: 100px;
+    box-shadow: 20px 20px 400px rgba(119, 149, 240, 0.3);
+    
 }
 
 .info {
@@ -8,6 +10,12 @@
 
     p {
         margin-top: 50px;
+        width: 80%;
+        text-align: center;
     }
     
+}
+
+.offers-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

@@ -6,7 +6,7 @@ export function AcercaDe() {
       <section className = "container my-5">
         <div className="row ">
           <div className="col-12 col-md-8 info">
-            <h1>Te Ofrecemos: </h1>
+            <h1 className = 'text-center text-primary offers-text'>Te Ofrecemos: </h1>
             <p>
             ° Registro Sencillo de Gastos: Añade tus gastos de manera rápida y fácil, ya sea mediante ingreso manual o sincronización con cuentas bancarias.
             <br /> <br />
