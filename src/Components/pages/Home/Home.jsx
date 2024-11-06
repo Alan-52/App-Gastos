@@ -5,7 +5,7 @@ export function Home() {
   return (
     <>
       <div className="banner text-white">
-        <h2>Gestor App</h2>
+        <h2 className>Gestor App</h2>
         <p>
           ¡Simplifica tu vida financiera con nuestra app de gestión de gastos!
           Lleva el control de tus ingresos y gastos de forma fácil y rápida
@@ -13,14 +13,14 @@ export function Home() {
           buscando ahorrar, o simplemente organizando tus finanzas diarias,
           nuestra app te ayuda a visualizar tus movimientos y tomar mejores
           decisiones.
-          <br />
+          <br /><br />
           Con herramientas intuitivas, podrás categorizar cada
           gasto, establecer presupuestos, y recibir alertas que te mantienen al
           tanto de tus objetivos financieros. Nuestro diseño claro y amigable
           hace que el seguimiento de tus finanzas sea sencillo, mientras que
           nuestros gráficos y reportes detallados te ofrecen una visión general
           de tus hábitos de consumo.
-          <br />
+          <br /><br />
           Además, la seguridad de tus datos es
           nuestra prioridad. Con encriptación avanzada, puedes estar seguro de
           que tu información estará siempre protegida. Únete a miles de usuarios

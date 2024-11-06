@@ -6,6 +6,11 @@
     background-attachment: fixed;
     position: relative;
     z-index: 1;
+    margin-top: -200px;
+
+    h2 {
+        color: rgb(72, 255, 0);
+    }
 }  
 
 .banner::after {
