@@ -13,7 +13,7 @@ export function FormularioUsuario () {
     function procesarFormulario (e) {
         e.preventDefault();
         let datosUsuario = {
-            nomnbre: nombreUsuario,
+            nombre: nombreUsuario,
             edad: edadUsuario,
             telefono: telefonoUsuario,
             correo: correoUsuario,
@@ -33,6 +33,7 @@ export function FormularioUsuario () {
     
     return (
         <>
+
             <br /> <br />
             <div className = "container my-5">
                 <div className = "row">
