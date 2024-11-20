@@ -2,45 +2,45 @@ import { useState, useEffect } from "react";
 import { Usuarios } from "../Usuarios/Usuarios";
 import '../../../assets/commonStyles/Cards.css'
 
-export function ListadoUsuario() {
+export function ListadoGastos() {
   // Simulando un conjunmto de datos que viene del back
 
-  let usuarios = [
+  let gastos = [
     {
-      id: 5,
-      nombre: "Alan Betancur Bedoya",
-      telefono: "3023901138",
-      ciudad: "Medellin",
+      id: 105,
+      descripcion: "Compra comida perro",
+      monto: "$2.500",
+      fechaGasto: "25/08/2023",
     },
     {
-      id: 85,
-      nombre: "Thomas Betancur",
-      telefono: "123450987",
-      ciudad: "Bello",
+      id: 33,
+      descripcion: "Pago servicios electricos",
+      monto: "$60.000",
+      fechaGasto: "15/12/2010",
     },
     {
-      id: 100,
-      nombre: "Jaime Galvis",
-      telefono: "3219004992",
-      ciudad: "Medellin",
+      id: 12,
+      descripcion: "Pago arriendo",
+      monto: "$800.000",
+      fechaGasto: "31/07/2024",
     },
     {
-      id: 120,
-      nombre: "Maria Jazmin Bedoya",
-      telefono: "3122647036",
-      ciudad: "Bello",
+      id: 56,
+      descripcion: "Pago de netflix",
+      monto: "$14.500",
+      fechaGasto: "23/02/2022",
     },
     {
-      id: 285,
-      nombre: "Samuel Bedoya",
-      telefono: "123450987",
-      ciudad: "Ovejas",
+      id: 203,
+      descripcion: "Compras supermercado",
+      monto: "$320.700",
+      fechaGasto: "13/11/2021",
     },
     {
-      id: 302,
-      nombre: "Jenry Bedoya",
-      telefono: "3122657835",
-      ciudad: "Medellin",
+      id: 203,
+      descripcion: "Salida a cine",
+      monto: "$120.000",
+      fechaGasto: "24/10/2022",
     },
   ];
 
@@ -54,7 +54,7 @@ export function ListadoUsuario() {
 
     function () {
       // Se carga la variable de estado con los datos del servicio
-      setDatosApi(usuarios);
+      setDatosApi(gastos);
       // Se cambia la variable de estado de la carga
       SetEstadoDeCarga(false);
     },
@@ -65,22 +65,22 @@ export function ListadoUsuario() {
       <br />
       <br />
       <br />
-      {console.log(usuarios)}
+      {console.log(gastos)}
 
-      <h3 className = "text-center mt-3 text-primary">Listado de Usuarios</h3>
+      <h3 className = "text-center mt-3 text-danger">Listado de Gastos</h3>
       <div className="container mt-5">
         <div className="row row-cols-1 row-cols-md-3 g-3 ">
           {
             // Renderizando un arreglo de objetos
-            usuarios.map(function (usuario) {
+            gastos.map(function (gasto) {
               return (
                 <div className="col">
                   <div className="card h100 shadow p-5 mb-3 card">
-                    <h5> {usuario.nombre} </h5>
+                    <h5> {gasto.descripcion} </h5>
                     <p>
-                        Id: {usuario.id} <br />
-                        Ciudad:  {usuario.ciudad} <br />
-                        Telefono: {usuario.telefono}
+                        Id: {gasto.id} <br />
+                        Ciudad:  {gasto.monto} <br />
+                        Fecha: {gasto.fechaGasto}
                     </p>
                     
                     

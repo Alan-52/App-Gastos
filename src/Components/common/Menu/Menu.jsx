@@ -38,8 +38,13 @@ export function Menu() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to = "/listado">
+                <Link className="nav-link" to = "/listadoUsuarios">
                   Lista de Usuarios
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to = "/lista2">
+                  Lista de Gastos
                 </Link>
               </li>
             </ul>
